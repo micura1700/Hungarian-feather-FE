@@ -3,33 +3,47 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
 
+
+function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="container mt-5">
+      <h1 className="mb-4">Bootstrap táblázat Reactben</h1>
+      <div style={{ width: "150%" }}>
+      <table className="table table-striped table-bordered">
+        <thead>
+          <tr>
+            <th>Cím</th>
+            <th>nemtudom</th>
+            <th>Telefonszám</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+          </tr>
+          <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+          </tr>
+          <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+          </tr>
+          <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+          </tr>
+        </tbody>
+      </table>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
